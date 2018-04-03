@@ -1,0 +1,64 @@
+body, html {
+    height: 100%;
+}
+
+.page-header {
+    height: 100%;
+}
+
+.header-background {
+    background-image: url("../resources/circuitBackground.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-center {
+    color: white;
+    padding: 200px 0;
+    font-size: 75px;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.btn-style {
+    height: 75px;
+    width: 300px;
+}
+
+.bio-photo {
+    background-size: cover;
+}
+
+
+#resume-sec {
+    background-color: #0B0B0B;
+    color: white;
+}
+
+.resume-header {
+    padding: 25px 0 25px 200px;
+}
+
+.resume {
+    padding: 50px 0;
+}
+
+.reference {
+    font-size: 40px;
+}
+
+.page-footer {
+    padding-top: 9px;
+    margin: 20px 0 0px;
+    border-top: 1px solid #eee;
+}
+
+.link-icon {
+    font-size: 35px;
+    height: 50px;
+}
