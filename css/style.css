@@ -6,6 +6,22 @@ body, html {
     height: 100%;
 }
 
+.transparent {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+}
+
+.nav-item {
+    color: white;
+    font-size: 20px;
+    opacity: 1;
+}
+
 .header-background {
     background-image: url("../resources/circuitBackground.jpg");
     height: 100%;
@@ -14,10 +30,20 @@ body, html {
     background-size: cover;
 }
 
-.header-center {
-    color: white;
-    padding: 200px 0;
-    font-size: 75px;
+@media (min-width: 1600px) {
+    .header-center {
+        color: white;
+        padding: 200px 0;
+        font-size: 75px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+    .header-center {
+        color: white;
+        padding: 200px 0 100px 0;
+        font-size: 50px;
+    }
 }
 
 .col-centered{
@@ -40,7 +66,7 @@ body, html {
     color: white;
 }
 
-.resume-header {
+.sec-header {
     padding: 25px 0 25px 200px;
 }
 
@@ -52,13 +78,62 @@ body, html {
     font-size: 40px;
 }
 
-.page-footer {
-    padding-top: 9px;
-    margin: 20px 0 0px;
-    border-top: 1px solid #eee;
+.level {
+    padding: 15px 0 15px 250px;
+}
+
+.btn-skill {
+    background-color: #0B0B0B;
+    color: white;
+    font-size: 20px;
+}
+
+.btn-skill:hover {
+    font-size: 25px;
+}
+
+.btn-red {
+    border-color: #ff0000;
+    border-width: 2px;
+}
+
+.btn-yellow {
+    border-color: #ffe900;
+    border-width: 2px;
+}
+
+.btn-blue {
+    border-color: #0008ff;
+    border-width: 2px;
+}
+
+.btn-green {
+    border-color: #03c900;
+    border-width: 2px;
+}
+
+#project-sec {
+    background-color: #0B0B0B;
+    color: white;
+}
+
+.project img {
+    height: 200px;
+    width: 300px;
+    padding-right: 10px;
+}
+
+.contact-element {
+    padding: 15px 0 15px 250px;
 }
 
 .link-icon {
     font-size: 35px;
     height: 50px;
+}
+
+.page-footer {
+    padding-top: 9px;
+    margin: 20px 0 0px;
+    border-top: 1px solid #eee;
 }
