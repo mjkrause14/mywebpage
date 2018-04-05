@@ -57,9 +57,16 @@ body, html {
 }
 
 .bio-photo {
+    width: 300px;
+    height: 200px;
     background-size: cover;
 }
 
+.jumbo {
+    background-color: #0B0B0B;
+    color: white;
+
+}
 
 #resume-sec {
     background-color: #0B0B0B;
