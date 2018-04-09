@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width; maximum-scale=1; minimum-scale=1;" />
     <Title>Matt Krause</Title>
 </head>
 <body>
     <div class="page-header">
         <div class="header-background">
-                <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top transparent">
+                <nav class="navbar navbar-expand-lg navbar-dark transparent">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Matt Krause</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                      
+                            <a class="navbar-brand" href="#">Matt Krause</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                           <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
@@ -38,110 +38,163 @@
                         </div>
                     </div>
                 </nav>
-            <div class="container-fluid header-hidden">
-            <h1 class="text-center header-center">Matt Krause - Software Engineering Student</h1>
+            <div class="container header-hidden">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h1 class="text-center header-center">Matt Krause<br>Software Engineering Student</h1>
+                    </div>
+                </div>
             <div class="row">
-                <div class="col-lg"></div>
-                <div class="col-lg col-centered text-center">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-centered text-center">
                     <button type="button" class="btn btn-default btn-lg btn-style btn-scroll" data-value="#about-me-sec">Get To Know Me</button>
                 </div>
-                <div class="col-lg"></div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
             </div>
             <br>
             <br>
             <div class="row">
-                <div class="col-lg"></div>
-                <div class="col-lg col-centered text-center">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-centered text-center">
                     <button type="button" class="btn btn-default btn-lg btn-style btn-scroll" data-value="#contact-sec">Contact Me</button>
                 </div>
-                <div class="col-lg"></div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
             </div>
         </div>
     </div>
     <br>
     <br>
     <div id="about-me-sec" class="container">
-        <div class="col-md-12 text-center">
+        <div class="bio-photo-container">
             <img src="resources/BIOPHOTO.jpg" class="rounded-circle bio-photo">
         </div>
         <br>
         <div class="jumbotron jumbo">
             <h1>About Me</h1>
-            <p>I am a senior Computer Science - Software Engineering student at Towson University. I have a love of programming 
+            <p>I am a senior Computer Science - Software Engineering student at Towson University (set to graduate in December 2018, but
+                all Computer Science coursework will be complete by June 2018). I have a love of programming 
                 and a passion for learning. While not doing coursework, I spend time researching and learning different
                 languages, frameworks, and tools and deepening my skills by working on personal projects. To learn more about me please 
                 visit one of the following links and get to know me a little better:
             </p>
             <p>
-                <button class="btn btn-default btn-lg btn-scroll" data-value="#resume-sec" role="button">My Resume</button>
-                <button class="btn btn-default btn-lg btn-scroll" data-value="#skill-sec" type="button">My Skills</button>
-                <button class="btn btn-default btn-lg btn-scroll" data-value="#project-sec" type="button">My Projects</button>
+                <div class="jumbo-about">
+                <div class="row">
+                    <button class="col-xs btn btn-default btn-md btn-scroll btn-jumbo-left" data-value="#resume-sec" 
+                        type="button">My Resume</button>
+                    <button class="col-xs btn btn-default btn-md btn-scroll btn-jumbo-mid" data-value="#skill-sec" 
+                        type="button">My Skills</button>
+                    <button class="col-xs btn btn-default btn-md btn-scroll btn-jumbo-right" data-value="#project-sec" 
+                        type="button">My Projects</button>
+                </div>
+                </div>
             </p>
         </div>
     </div>
     <br>
     <div id="resume-sec" class="container-fluid">
         <h2 class="sec-header">Resume: </h2>
-        <div class="col-md-12 text-center resume">
-            <object width="900" height="1100" data="resources/Krause_Resume.pdf"></object>
+        <div class="col-lg text-center resume">
+            <object class="resumepdf" data="resources/Krause_Resume.pdf" type="application/pdf">
+            </object>
+            <p class="resumeHidden">View my Resume Here: <a href="resume.html">Resume</a></p>
         </div>
     </div>
-    <div class="container-fluid">
+    <div id="skill-sec" class="container-fluid">
         <h2 class="sec-header">My Skills: </h2>
+        <div class="skill-container">
         <div class="media level">
             <div class="media-body">
                 <h4 class="media-heading">Proficient: </h4>
-                <button type="button" class="btn btn-default btn-sm btn-skill btn-red"><div><i class="fas fa-coffee fa-fw"></i> Java</div></button>
-                <button type="button" class="btn btn-default btn-sm btn-skill btn-blue"><div><i class="fab fa-js-square fa-fw"></i> JavaScript</div></button>
-                <button type="button" class="btn btn-default btn-sm btn-skill btn-yellow"><div><i class="fab fa-html5 fa-fw"></i> HTML</div></button>
-                <button type="button" class="btn btn-default btn-sm btn-skill btn-green"><div><i class="fab fa-css3-alt fa-fw"></i> CSS</div></button>
-                <button type="button" class="btn btn-default btn-sm btn-skill btn-red"><div><i class="fas fa-keyboard fa-fw"></i> TypeScript</div></button>
-                <button type="button" class="btn btn-default btn-sm btn-skill btn-green"><div><i class="fas fa-code-branch fa-fw"></i>Git</div></button>
+                <button type="button" class="btn btn-default btn-sm btn-skill btn-red">
+                    <div><i class="fas fa-coffee fa-fw"></i> Java</div>
+                </button>
+                <button type="button" class="btn btn-default btn-sm btn-skill btn-blue">
+                    <div><i class="fab fa-js-square fa-fw"></i> JavaScript</div>
+                </button>
+                <button type="button" class="btn btn-default btn-sm btn-skill btn-yellow">
+                    <div><i class="fab fa-html5 fa-fw"></i> HTML</div>
+                </button>
+                <button type="button" class="btn btn-default btn-sm btn-skill btn-green">
+                    <div><i class="fab fa-css3-alt fa-fw"></i> CSS</div>
+                </button>
+                <button type="button" class="btn btn-default btn-sm btn-skill btn-red">
+                    <div><i class="fas fa-keyboard fa-fw"></i> TypeScript</div>
+                </button>
+                <button type="button" class="btn btn-default btn-sm btn-skill btn-green">
+                    <div><i class="fas fa-code-branch fa-fw"></i>Git</div>
+                </button>
             </div>
         </div>
-        <div id="skill-sec" class="media level">
+        <div class="media level">
             <div class="media-body">
                 <h4 class="media-heading">Intermediate: </h4>
-                <button type="button" class="btn btn-default btn-sm btn-skill btn-green"><div><i class="fab fa-python fa-fw"></i> Python</div></button>
-                <button type="button" class="btn btn-default btn-sm btn-skill btn-red"><div><i class="fas fa-gem fa-fw"></i> Ruby</div></button>
-                <button type="button" class="btn btn-default btn-sm btn-skill btn-green"><div><i class="fas fa-database fa-fw"></i> SQL</div></button>
-                <button type="button" class="btn btn-default btn-sm btn-skill btn-blue"><div><i class="fab fa-angular fa-fw"></i> Angular 4</div></button>
-                <button type="button" class="btn btn-default btn-sm btn-skill btn-yellow"><div><i class="fas fa-book fa-fw"></i> JQuery</div></button>
+                <button type="button" class="btn btn-default btn-sm btn-skill btn-green">
+                    <div><i class="fab fa-python fa-fw"></i> Python</div>
+                </button>
+                <button type="button" class="btn btn-default btn-sm btn-skill btn-red">
+                    <div><i class="fas fa-gem fa-fw"></i> Ruby</div>
+                </button>
+                <button type="button" class="btn btn-default btn-sm btn-skill btn-green">
+                    <div><i class="fas fa-database fa-fw"></i> SQL</div>
+                </button>
+                <button type="button" class="btn btn-default btn-sm btn-skill btn-blue">
+                    <div><i class="fab fa-angular fa-fw"></i> Angular 4</div>
+                </button>
+                <button type="button" class="btn btn-default btn-sm btn-skill btn-yellow">
+                    <div><i class="fas fa-book fa-fw"></i> JQuery</div>
+                </button>
             </div>
         </div>
         <div class="media level">
             <div class="media-body">
                 <h4 class="media-heading">Beginner: </h4>
-                <button type="button" class="btn btn-default btn-sm btn-skill btn-yellow"><div><i class="fas fa-plus fa-fw"></i> C++</div></button>
-                <button type="button" class="btn btn-default btn-sm btn-skill btn-blue"><div><i class="fab fa-node fa-fw"></i> Node.js</div></button>
-                <button type="button" class="btn btn-default btn-sm btn-skill btn-red"><div><i class="fab fa-node-js fa-fw"></i> Express</div></button>
+                <button type="button" class="btn btn-default btn-sm btn-skill btn-yellow">
+                    <div><i class="fas fa-plus fa-fw"></i> C++</div>
+                </button>
+                <button type="button" class="btn btn-default btn-sm btn-skill btn-blue">
+                    <div><i class="fab fa-node fa-fw"></i> Node.js</div>
+                </button>
+                <button type="button" class="btn btn-default btn-sm btn-skill btn-red">
+                    <div><i class="fab fa-node-js fa-fw"></i> Express</div>
+                </button>
             </div>
         </div>
         <div class="media level">
             <div class="media-body">
                 <h4 class="media-heading">Operating Systems: </h4>
-                <button type="button" class="btn btn-default btn-sm btn-skill btn-blue"><div><i class="fab fa-windows fa-fw"></i> Windows</div></button>
-                <button type="button" class="btn btn-default btn-sm btn-skill btn-green"><div><i class="fab fa-linux fa-fw"></i> Linux</div></button>
+                <button type="button" class="btn btn-default btn-sm btn-skill btn-blue">
+                    <div><i class="fab fa-windows fa-fw"></i> Windows</div>
+                </button>
+                <button type="button" class="btn btn-default btn-sm btn-skill btn-green">
+                    <div><i class="fab fa-linux fa-fw"></i> Linux</div>
+                </button>
             </div>
         </div>
         <div class="media level">
                 <div class="media-body">
                     <h4 class="media-heading">Other Skills: </h4>
-                    <button type="button" class="btn btn-default btn-sm btn-skill btn-yellow"><div><i class="fas fa-edit fa-fw"></i> Design Patterns</div></button>
-                    <button type="button" class="btn btn-default btn-sm btn-skill btn-red"><div><i class="far fa-object-group fa-fw"></i> UML</div></button>
+                    <button type="button" class="btn btn-default btn-sm btn-skill btn-yellow">
+                        <div><i class="fas fa-edit fa-fw"></i> Design Patterns</div>
+                    </button>
+                    <button type="button" class="btn btn-default btn-sm btn-skill btn-red">
+                        <div><i class="far fa-object-group fa-fw"></i> UML</div>
+                    </button>
                 </div>
             </div>
+        </div>
     </div>
     <div id="project-sec" class="container-fluid">
         <h2 class="sec-header">Projects: </h2>
+        <div class="project-container">
         <div class="media level">
             <div class="media-left media-middle project">
-                <img src="resources/rr.jpg">
+                <img src="resources/rr.JPG">
             </div>
                 <div class="media-body">
-                    <h4 class="media-heading">Restaurant Randomizer</h4>
-                    <p>A web application that takes the user location and searches the surrounding area for restaurants. <br>The program
-                        than puts the results into a list and randomly select a restaurant from the list
+                    <h4 class="media-heading project-head">Restaurant Randomizer</h4>
+                    <p class="project-content">A web application that takes the user location and searches the surrounding area for restaurants. <br>The program
+                        then puts the results into a list and randomly select a restaurant from the list
                     </p>
                     <button type="button" class="btn btn-default btn-md" onclick="location.href='https://github.com/mjkrause14/RestaurantRandomizer';">
                         <i class="fab fa-github fa-fw"></i> View Project</button>
@@ -149,24 +202,24 @@
             </div>
         <div class="media level">
                 <div class="media-left media-middle project">
-                    <img src="resources/wwydh.jpg">
+                    <img src="resources/wwydh.JPG">
                 </div>
                     <div class="media-body">
-                        <h4 class="media-heading">What Would You Do Here?</h4>
-                        <p>A web application that retrieves empty lots in Baltimore and lets users pick a project or event to<br> use the 
-                            empty plot of land for
+                        <h4 class="media-heading project-head">What Would You Do Here?</h4>
+                        <p class="project-content">A web application that retrieves empty lots in Baltimore and lets users pick a project or event to<br> use the 
+                            empty plot of land for.
                         </p>
                         <button type="button" class="btn btn-default btn-md" onclick="location.href='https://github.com/mjkrause14/wwydh-app';">
                             <i class="fab fa-github fa-fw"></i> View Project</button>
                     </div>
                 </div>
-        <div class="media level">
+        <div class="media level project-head">
             <div class="media-left media-middle project">
-                <img src="resources/insure.jpg">
+                <img src="resources/insure.JPG">
             </div>
                 <div class="media-body">
-                    <h4 class="media-heading">Java and Sensitive Data - NSA</h4>
-                    <p>Java and Sensitive Data is an NSA sponsored project that tries to find a solution to the JVM's<br> leakage of sensitive
+                    <h4 class="media-heading project-head">Java and Sensitive Data - NSA</h4>
+                    <p class="project-content">Java and Sensitive Data is an NSA sponsored project that tries to find a solution to the JVM's<br> leakage of sensitive
                         data. As part of the team researching this problem, I am working on creating a tool to properly<br> store and handle
                         sensitive data so that it is not at risk of being accessed even after Garbage Collection has run.
                     </p>
@@ -176,6 +229,7 @@
                     </span>
                 </div>
             </div>
+        </div>
     </div>
     <div id="contact-sec" class="container-fluid">
         <h2 class="sec-header">Contact Me: </h2>
@@ -213,6 +267,7 @@
     <script src="https://code.jquery.com/jquery-3.1.0.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.480/pdf.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
