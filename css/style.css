@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body, html {
     height: 100%;
 }
@@ -28,75 +32,73 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
-@media (min-width: 1600px) {
-    .header-center {
-        color: white;
-        padding: 200px 0;
-        font-size: 75px;
-    }
-}
-
-@media (min-width: 1200px) and (max-width: 1599px) {
-    .header-center {
-        color: white;
-        padding: 200px 0 100px 0;
-        font-size: 50px;
-    }
-}
-
-.col-centered{
-    float: none;
-    margin: 0 auto;
-}
-
-.btn-style {
-    height: 75px;
-    width: 300px;
+.header-center {
+    color: white;
+    padding: 100px 0 75px 0;
+    font-size: 35px;
 }
 
 .bio-photo {
-    width: 300px;
-    height: 200px;
+    margin-right: -15px;
+    width: 250px;
+    height: 280px;
     background-size: cover;
 }
 
-.jumbo {
-    background-color: #0B0B0B;
-    color: white;
-
+.bio-photo-container {
+    margin-left: 40px;
 }
 
-#resume-sec {
+.jumbo {
+    display: block;
     background-color: #0B0B0B;
     color: white;
+}
+
+.shell {
+    display: none;
+}
+
+.jumbo-about {
+    margin-left: 4px;
+}
+
+.btn-jumbo-left {
+    margin: 0 3px;
+}
+
+.btn-jumbo-right {
+    margin-left: 3px;
 }
 
 .sec-header {
-    padding: 25px 0 25px 200px;
+    font-size: 30px;
 }
 
+#resumesec {
+    background-color: #0B0B0B;
+    color: white;
+}
 .resume {
-    padding: 50px 0;
+    padding-bottom: 20px;
 }
 
-.reference {
-    font-size: 40px;
-}
-
-.level {
-    padding: 15px 0 15px 250px;
+.resumepdf {
+    display: none;
 }
 
 .btn-skill {
     background-color: #0B0B0B;
     color: white;
-    font-size: 20px;
+    margin-bottom: 5px;
+    font-size: 10px;
 }
 
 .btn-skill:hover {
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .btn-red {
@@ -119,28 +121,189 @@ body, html {
     border-width: 2px;
 }
 
-#project-sec {
+#projectsec {
     background-color: #0B0B0B;
     color: white;
 }
 
+.project-container {
+    padding-bottom: 10px;
+}
+
 .project img {
-    height: 200px;
-    width: 300px;
+    height: 100px;
+    width: 150px;
     padding-right: 10px;
 }
 
-.contact-element {
-    padding: 15px 0 15px 250px;
+.project-head {
+    font-size: 15px;
 }
 
-.link-icon {
-    font-size: 35px;
-    height: 50px;
+.project-content {
+    font-size: 12px;
 }
 
-.page-footer {
-    padding-top: 9px;
-    margin: 20px 0 0px;
-    border-top: 1px solid #eee;
+.skill-container {
+    margin-bottom: 10px;
 }
+
+.media-body {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+    .bio-photo {
+        margin-right: -15px;
+        width: 300px;
+        height: 330px;
+        background-size: cover;
+    }
+    
+    .bio-photo-container {
+        margin-left: 100px;
+    }
+ }
+
+@media (min-width: 768px) { 
+    .bio-photo {
+        margin-right: -15px;
+        width: 350px;
+        height: 380px;
+        background-size: cover;
+    }
+    
+    .bio-photo-container {
+        margin-left: 165px;
+    }
+}
+
+@media (min-width: 992px) { 
+    .bio-photo {
+        margin-right: -15px;
+        width: 350px;
+        height: 380px;
+        background-size: cover;
+    }
+    
+    .bio-photo-container {
+        margin-left: 270px;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .header-center {
+        color: white;
+        padding: 100px 0 100px 0;
+        font-size: 75px;
+    }
+    
+    .header-hidden {
+        display: none;
+    }
+    
+    .col-centered{
+        float: none;
+        margin: 0 auto;
+    }
+    
+    .btn-style {
+        height: 75px;
+        width: 300px;
+    }
+    
+    .bio-photo {
+        width: 400px;
+        height: 430px;
+        background-size: cover;
+    }
+    
+    .bio-photo-container {
+        margin-left: 335px;
+    }
+
+    .jumbo {
+        display: none;
+        background-color: #0B0B0B;
+        color: white;
+    }
+
+    .jumbo-about {
+        margin-left: 0;
+    }
+    
+    .resumepdf {
+        display: inline;
+        width: 900px;
+        height: 1100px;
+    }
+    
+    .resumeHidden {
+        display: none;
+    }
+    
+    .sec-header {
+        padding: 25px 0 25px 100px;
+        font-size: 45px;
+    }
+    
+    .resume {
+        padding: 50px 0;
+    }
+    
+    .reference {
+        font-size: 40px;
+    }
+    
+    .level {
+        padding: 15px 0 15px 250px;
+    }
+    
+    .btn-skill {
+        background-color: #0B0B0B;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .btn-skill:hover {
+        font-size: 25px;
+    }
+    
+    .project img {
+        height: 200px;
+        width: 300px;
+        padding-right: 10px;
+    }
+    
+    .project-head {
+        font-size: 25px;
+    }
+    
+    .project-content {
+        font-size: 20px;
+    }
+
+    .contact-element {
+        padding: 15px 0 15px 250px;
+    }
+    
+    .link-icon {
+        font-size: 35px;
+        height: 50px;
+        color: #0B0B0B;
+    }
+    
+    .page-footer {
+        padding-top: 9px;
+        margin: 20px 0 0px;
+        border-top: 1px solid #eee;
+    }
+
+    .link-ref {
+        background-color: white;
+    }
+
+    .link-ref:hover {
+        background-color: white;
+    }
+ }
