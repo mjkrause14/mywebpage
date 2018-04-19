@@ -5,6 +5,8 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/terminal.css">
+    <link rel="shortcut icon" type="image/png" href="resources/favicon.ico"/>
     <Title>Matt Krause</Title>
 </head>
 <body>
@@ -12,27 +14,27 @@
         <div class="header-background">
                 <nav class="navbar navbar-expand-lg navbar-dark transparent">
                     <div class="container-fluid">
-                            <a class="navbar-brand" href="#">Matt Krause</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                            <a class="navbar-brand transparent" href="#">Matt Krause</a>
+                            <button class="navbar-toggler transparent" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
                                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="collapse navbar-collapse transparent" id="navbarSupportedContent">
                           <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                              <a class="nav-link" href="index.html">Home</a>
+                              <button class="nav-link transparent btn-scroll" type="button" data-value="#aboutmesec">Home</button>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#resume-sec">Resume</a>
+                              <button class="nav-link transparent btn-scroll" type="button" data-value="#resumesec">Resume</button>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact-sec">Contact Me</a>
+                                <button class="nav-link transparent btn-scroll" type="button" data-value="#contactsec">Contact Me</button>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#skill-sec">Skills</a>
+                                <button class="nav-link transparent btn-scroll" type="button" data-value="#skillsec">Skills</button>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#project-sec">Projects</a>
+                                <button class="nav-link transparent btn-scroll" type="button" data-value="#projectsec">Projects</button>
                             </li>
                           </ul>
                         </div>
@@ -47,7 +49,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-centered text-center">
-                    <button type="button" class="btn btn-default btn-lg btn-style btn-scroll" data-value="#about-me-sec">Get To Know Me</button>
+                    <button type="button" class="btn btn-default btn-lg btn-style btn-scroll" data-value="#aboutmesec">Get To Know Me</button>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
             </div>
@@ -56,43 +58,78 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-centered text-center">
-                    <button type="button" class="btn btn-default btn-lg btn-style btn-scroll" data-value="#contact-sec">Contact Me</button>
+                    <button type="button" class="btn btn-default btn-lg btn-style btn-scroll" data-value="#contactsec">Contact Me</button>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
             </div>
         </div>
     </div>
-    <br>
-    <br>
-    <div id="about-me-sec" class="container">
-        <div class="bio-photo-container">
-            <img src="resources/BIOPHOTO.jpg" class="rounded-circle bio-photo">
-        </div>
-        <br>
-        <div class="jumbotron jumbo">
-            <h1>About Me</h1>
-            <p>I am a senior Computer Science - Software Engineering student at Towson University (set to graduate in December 2018, but
-                all Computer Science coursework will be complete by June 2018). I have a love of programming 
-                and a passion for learning. While not doing coursework, I spend time researching and learning different
-                languages, frameworks, and tools and deepening my skills by working on personal projects. To learn more about me please 
-                visit one of the following links and get to know me a little better:
-            </p>
-            <p>
-                <div class="jumbo-about">
-                <div class="row">
-                    <button class="col-xs btn btn-default btn-md btn-scroll btn-jumbo-left" data-value="#resume-sec" 
-                        type="button">My Resume</button>
-                    <button class="col-xs btn btn-default btn-md btn-scroll btn-jumbo-mid" data-value="#skill-sec" 
-                        type="button">My Skills</button>
-                    <button class="col-xs btn btn-default btn-md btn-scroll btn-jumbo-right" data-value="#project-sec" 
-                        type="button">My Projects</button>
-                </div>
-                </div>
-            </p>
-        </div>
     </div>
     <br>
-    <div id="resume-sec" class="container-fluid">
+    <br>
+    <div id="aboutmesec" class="container">
+        <div class="bio-photo-container">
+            <img src="resources/PROPHOTO.jpg" class="rounded-circle bio-photo">
+        </div>
+        <br>
+                <div class="jumbotron jumbo">
+                    <h1>About Me</h1>
+                    <p>I am a senior Computer Science - Software Engineering student at Towson University (set to graduate in December 2018, but
+                        all Computer Science coursework will be complete by June 2018). I have a love of programming 
+                        and a passion for learning. While not doing coursework, I spend time researching and learning different
+                        languages, frameworks, and tools and deepening my skills by working on personal projects. To learn more about me please 
+                        visit one of the following links and get to know me a little better:
+                    </p>
+                    <p>
+                        <div class="jumbo-about">
+                        <div class="row">
+                            <button class="col-xs btn btn-default btn-md btn-scroll btn-jumbo-left" data-value="#resumesec" 
+                                type="button">My Resume</button>
+                            <button class="col-xs btn btn-default btn-md btn-scroll btn-jumbo-mid" data-value="#skillsec" 
+                                type="button">My Skills</button>
+                            <button class="col-xs btn btn-default btn-md btn-scroll btn-jumbo-right" data-value="#projectsec" 
+                                type="button">My Projects</button>
+                        </div>
+                        </div>
+                    </p>
+                </div>
+            </div>
+            <br>
+        <div class="container shell">
+                <div class="shell-wrap">
+                    <p class="shell-top-bar">www.MattKrause.net</p>
+                    <main>
+                        <section id="home">
+                            <h2>About Me - CLI</h2>
+                            <p>I am a senior Computer Science - Software Engineering student at Towson University (set to graduate in December 2018, but
+                                all Computer Science coursework will be complete by June 2018). I have a love of programming 
+                                and a passion for learning. While not doing coursework, I spend time researching and learning different
+                                languages, frameworks, and tools and deepening my skills by working on personal projects. To learn more about me please 
+                                enter one of the following commands and get to know me a little better: </p>
+                                <p><span>Type [command] + <kbd>Enter</kbd></span></p>
+                                <ul class="list-unstyled">
+                                    <li>'resume' -- My Resume</li>
+                                    <li>'skill' -- My Skills</li>
+                                    <li>'project' -- My Projects</li>
+                                </ul>
+                            </section>
+                                           
+                            <section id="error">
+                            <p>Command not found!<p> 
+                            <p><span>Type [command] + <kbd>Enter</kbd></span></p>
+                                <ul class="list-unstyled">
+                                    <li>'resume' -- What's this for</li>
+                                    <li>'skill' -- How to</li>
+                                    <li>'projects' -- Download + license</li>
+                                </ul>
+                            </section>                   
+                            
+                            <span class="command">mattkrausenet:/$<input class="command-in" type="text"></span>
+                            </main>
+                </div>
+                </div>
+    </div>
+    <div id="resumesec" class="container-fluid">
         <h2 class="sec-header">Resume: </h2>
         <div class="col-lg text-center resume">
             <object class="resumepdf" data="resources/Krause_Resume.pdf" type="application/pdf">
@@ -100,7 +137,7 @@
             <p class="resumeHidden">View my Resume Here: <a href="resume.html">Resume</a></p>
         </div>
     </div>
-    <div id="skill-sec" class="container-fluid">
+    <div id="skillsec" class="container-fluid">
         <h2 class="sec-header">My Skills: </h2>
         <div class="skill-container">
         <div class="media level">
@@ -139,7 +176,7 @@
                     <div><i class="fas fa-database fa-fw"></i> SQL</div>
                 </button>
                 <button type="button" class="btn btn-default btn-sm btn-skill btn-blue">
-                    <div><i class="fab fa-angular fa-fw"></i> Angular 4</div>
+                    <div><i class="fab fa-angular fa-fw"></i> Angular 5</div>
                 </button>
                 <button type="button" class="btn btn-default btn-sm btn-skill btn-yellow">
                     <div><i class="fas fa-book fa-fw"></i> JQuery</div>
@@ -184,7 +221,7 @@
             </div>
         </div>
     </div>
-    <div id="project-sec" class="container-fluid">
+    <div id="projectsec" class="container-fluid">
         <h2 class="sec-header">Projects: </h2>
         <div class="project-container">
         <div class="media level">
@@ -231,7 +268,7 @@
             </div>
         </div>
     </div>
-    <div id="contact-sec" class="container-fluid">
+    <div id="contactsec" class="container-fluid">
         <h2 class="sec-header">Contact Me: </h2>
         <div class="contact-element">
             <h4 class="contact-header">Email: </h4>
@@ -253,11 +290,11 @@
     <div class="page-footer">
         <div class="container-fluid">
             <h5 class="text-center">
-                <a href="https://www.linkedin.com/in/matthew-krause-b668a1134/">
-                    <i class="fab fa-linkedin link-icon" style="color: #0B0B0B"></i>
+                <a class="link-ref" href="https://www.linkedin.com/in/matthew-krause-b668a1134/">
+                    <i class="fab fa-linkedin link-icon"></i>
                 </a>
-                <a href="https://github.com/mjkrause14">
-                    <i class="fab fa-github link-icon" style="color: #0B0B0B"></i>
+                <a class="link-ref" href="https://github.com/mjkrause14">
+                    <i class="fab fa-github link-icon"></i>
                 </a>
             </h5>
             <h5 class="text-center">Matt Krause 2018</h5>
@@ -268,6 +305,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.480/pdf.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

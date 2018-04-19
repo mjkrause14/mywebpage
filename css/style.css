@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body, html {
     height: 100%;
 }
@@ -39,18 +43,23 @@ body, html {
 
 .bio-photo {
     margin-right: -15px;
-    width: 350px;
-    height: 250px;
+    width: 250px;
+    height: 280px;
     background-size: cover;
 }
 
 .bio-photo-container {
-    margin-left: -9px;
+    margin-left: 40px;
 }
 
 .jumbo {
+    display: block;
     background-color: #0B0B0B;
     color: white;
+}
+
+.shell {
+    display: none;
 }
 
 .jumbo-about {
@@ -69,7 +78,7 @@ body, html {
     font-size: 30px;
 }
 
-#resume-sec {
+#resumesec {
     background-color: #0B0B0B;
     color: white;
 }
@@ -112,7 +121,7 @@ body, html {
     border-width: 2px;
 }
 
-#project-sec {
+#projectsec {
     background-color: #0B0B0B;
     color: white;
 }
@@ -144,20 +153,41 @@ body, html {
 }
 
 @media (min-width: 576px) {
+    .bio-photo {
+        margin-right: -15px;
+        width: 300px;
+        height: 330px;
+        background-size: cover;
+    }
+    
     .bio-photo-container {
-        margin-left: 75px;
+        margin-left: 100px;
     }
  }
 
 @media (min-width: 768px) { 
+    .bio-photo {
+        margin-right: -15px;
+        width: 350px;
+        height: 380px;
+        background-size: cover;
+    }
+    
     .bio-photo-container {
-        margin-left: 170px;
+        margin-left: 165px;
     }
 }
 
 @media (min-width: 992px) { 
+    .bio-photo {
+        margin-right: -15px;
+        width: 350px;
+        height: 380px;
+        background-size: cover;
+    }
+    
     .bio-photo-container {
-        margin-left: 300px;
+        margin-left: 270px;
     }
 }
 
@@ -183,16 +213,17 @@ body, html {
     }
     
     .bio-photo {
-        width: 550px;
-        height: 400px;
+        width: 400px;
+        height: 430px;
         background-size: cover;
     }
     
     .bio-photo-container {
-        margin-left: 270px;
+        margin-left: 335px;
     }
 
     .jumbo {
+        display: none;
         background-color: #0B0B0B;
         color: white;
     }
@@ -259,11 +290,20 @@ body, html {
     .link-icon {
         font-size: 35px;
         height: 50px;
+        color: #0B0B0B;
     }
     
     .page-footer {
         padding-top: 9px;
         margin: 20px 0 0px;
         border-top: 1px solid #eee;
+    }
+
+    .link-ref {
+        background-color: white;
+    }
+
+    .link-ref:hover {
+        background-color: white;
     }
  }

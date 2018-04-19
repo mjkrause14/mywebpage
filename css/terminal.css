@@ -1,0 +1,160 @@
+@media (min-width: 1200px) { 
+.shell-wrap {
+    width: 1000px;
+    margin: 0 auto 0 auto;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+  
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  
+  .shell-top-bar {
+    text-align: center;
+    color: #525252;
+    padding: 5px 0;
+    margin: 0;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+    font-size: 0.85em;
+    border: 1px solid #CCCCCC;
+    border-bottom: none;
+  
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  
+    background: #f7f7f7; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f7f7f7 0%, #B8B8B8 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#B8B8B8)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f7f7f7 0%,#B8B8B8 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f7f7f7 0%,#B8B8B8 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f7f7f7 0%,#B8B8B8 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f7f7f7 0%,#B8B8B8 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#B8B8B8',GradientType=0 ); /* IE6-9 */
+  }
+  
+  .shell-body {
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+    background: #141414;
+    color: #f7f7f7;
+    font: 0.8em 'Andale Mono', Consolas, 'Courier New';
+    line-height: 1.6em;
+  
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  
+  .shell-body li:before {
+    content: '$';
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .shell-body li {
+    word-wrap: break-word;
+    position: relative;
+    padding: 0 0 0 15px;
+  }
+
+  @import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+html {
+  overflow-y: scroll; 
+}
+
+.shell {
+  display: inline;
+  font: .875em/1.6 'Inconsolata', monospace;
+  color: #f7f7f7;
+  font-weight: 400;
+  font-size: 17px;
+  max-width: 28em;
+  padding: 1em;
+  margin: 5% 0; 
+}
+
+main {
+    background: #141414;
+}
+::selection{
+  background: #eee
+}
+::-webkit-selection{
+  background: #eee
+}
+::-moz-selection{
+  background: #eee
+}
+a{
+  background: #141414;
+}
+a:hover,a:focus{
+  background: #141414;
+  color:#fff;
+}
+h2{
+  font-size: 1em;
+  font-weight: 400;
+}
+p{
+  margin-bottom:2em;
+}
+abbr{
+  cursor: help;
+}
+#help ul{
+  list-style: none;
+  padding: 0;
+}
+#help li{
+  margin:1em 0 0;
+}
+span{
+  display: block;
+  color:#f7f7f7;
+  line-height:1;
+}
+
+kbd{
+  font-family: 'Inconsolata', monospace;
+  border:1px solid #f7f7f7;
+  text-transform: uppercase;
+  padding:0 .2em;
+}
+input[type="text"]{
+  max-width: 10em;
+  border: none;
+  font-family: inherit;
+  background: #141414;
+  padding:0 .5em;
+}
+input[type="text"]:focus{
+  background: #141414;
+  color: #f7f7f7;
+  outline:none;
+}
+.command{
+  display: block;
+  max-width: 20em;
+  color: #45D40C;
+  font-weight: 700;
+  margin: 2em 0;
+}
+
+
+section{
+  display: none;
+}
+.open{
+  display: block;
+}
+}
